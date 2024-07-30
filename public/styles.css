@@ -1,0 +1,291 @@
+body{
+    margin: 0;
+}
+
+.navbar{
+    background-color: orange !important;
+}
+
+.navbar #header-brand{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 3rem;
+    text-decoration: none;
+    color: black;
+    transition: 0.25s color;
+}
+
+.navbar #header-brand:hover{
+    color: white;
+}
+
+.navbar-nav{
+    margin-left: auto;
+    margin-right: 5%;
+
+}
+
+.navbar-nav a, .navbar-nav button{
+    font-size: 1.25rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+    transition: 0.25s all;
+    margin-right: 1rem;
+}
+
+.navbar-nav a:hover, .navbar-nav button:hover{
+    color: black;
+}
+
+.navbar-nav button{
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+
+
+/*HEADER COMPONENT*/
+
+.header{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("images/meal_header_image.jpg");
+    padding: 10% 15% 18% 15%;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.header h1{
+    font-size: 3rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+}
+
+.header p{
+    margin-bottom: 2.25rem;
+    margin-top: 2.25rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.25rem;
+}
+
+.header a{
+    font-family: "Roboto Mono", sans-serif;
+    font-weight: bolder;
+    margin-right: 0.5rem;
+}
+
+@media (max-width: 1450px){
+    .header{
+        text-align: center;
+        padding: 15%;
+    }
+}
+
+@media (max-width: 1000px){
+    .header h1{
+        font-size: 2.5rem;
+    }
+
+    .header p{
+        font-size: 1rem;
+    }
+}
+
+/*Meals Container*/
+
+.meals-container{
+    width: 58rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: orange;
+    padding: 1%;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 2.5rem;
+}
+
+.meal-object{
+    width: 90%;
+    color: black;
+    background-color: white;
+    margin-bottom: 1rem;
+    padding: 1%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.meal-object .info{
+    width: 40%;
+    display: inline-block;
+}
+
+.meal-object .buttons{
+    width: 50%;
+    display: inline-block;
+}
+
+.meal-object button{
+    display: block;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 1450px){
+    .meals-container{
+        width: 45rem;
+    }
+}
+
+@media (max-width: 1100px){
+    .meals-container{
+        width: 38rem;
+    }
+}
+
+@media (max-width: 850px){
+    .meals-container{
+        width: 30rem;
+        padding: 5% 1%;
+    }
+}
+
+@media (max-width: 645px){
+    .meals-container{
+        width: 25rem;
+    }
+}
+
+@media (max-width: 500px){
+    .meals-container{
+        width: 90%;
+    }
+}
+
+/* CART */
+
+.cart{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.cart-content{
+    padding: 1%;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5%;
+    width: 48rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+}
+
+.cart-item{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    margin-top: 2.5rem;
+}
+
+.cart-item .info{
+    display: inline-table;
+    width: 40%;
+}
+
+.cart-item h2{
+    margin-bottom: 1rem;
+}
+
+.cart-item .interact{
+    display: inline-table;
+    width: 50%;
+}
+
+.cart-item .interact button{
+    margin-top: 0;
+}
+
+.cart button{
+    margin-top: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+@media (max-width: 1450px){
+    .cart-content{
+        width: 38rem;
+    }
+}
+
+@media (max-width: 1150px){
+    .cart-content{
+        width: 28rem;
+    }
+}
+
+@media (max-width: 780px){
+    .cart-content{
+        width: 22.5rem;
+    }
+}
+
+@media (max-width: 500px){
+    .cart-content{
+        width: 80%;
+    }
+}
+
+/*REGISTER*/
+
+.register{
+    width: 30rem;
+    background-color: orange;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 1%;
+}
+
+.register input{
+    display: block;
+    width: 90%;
+    margin-top: 1rem;
+    padding: 1%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.register button{
+    margin-top: 1rem;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bolder;
+}
+
+#success{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bolder;
+    color: green;
+}
+
+#error{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bolder;
+    color: red;
+}
+
+@media (max-width: 550px){
+    .register{
+        width: 18rem;
+    }
+}
