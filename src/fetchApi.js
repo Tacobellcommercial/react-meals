@@ -1,5 +1,5 @@
 
-const starter_path = "http://localhost:3001"
+const starter_path = "https://react-meals-api-c1kj.onrender.com";
 
 export async function fetchApi(path, authentication, body_data, type){
     try{
